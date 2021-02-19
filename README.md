@@ -1,4 +1,4 @@
-### Moon.vim
+### Fire.vim
 A red-heavy colorscheme based off my wallpaper
 
 ## Todo
