@@ -8,7 +8,8 @@ let g:colors_name='fire'
 
 " background            = '#2c2a2b'
 " red                   = '#b65555'
-" orange                = '#e05e00'
+" orange1               = '#e05e00'
+" orange2               = '#ffa333'
 " pink                  = '#fb5189'
 " bright_red            = '#eb4a36'
 " bright_orange         = '#ffba68'
@@ -31,13 +32,14 @@ map gm :call SynStack()<CR>
 hi Normal            gui=None guifg=None guibg='#2c2a2b'
 hi SignColumn        gui=None guifg=None guibg='#2c2a2b'
 hi ColorColumn       gui=None guifg=None guibg='#5e3131'
+hi CursorLine        gui=None guifg=None guibg='#5e3131'
 hi Comment           gui=None guifg='#82b963' guibg=None
 hi LineNr            gui=None guifg='#FFA333' guibg=None
 hi CursorLineNR      gui=None guifg='#e05e00' guibg=None
 
 hi String            gui=None guifg='#ffba68' guibg=None
-hi Variable            gui=None guifg='#ffba68' guibg=None
-hi Character         gui=None guifg=None guibg=None
+hi Variable          gui=None guifg='#ffba68' guibg=None
+hi Character         gui=None guifg='#ffba68' guibg=None
 hi Number            gui=None guifg=None guibg=None
 hi Boolean           gui=None guifg=None guibg=None
 hi Float             gui=None guifg=None guibg=None
@@ -81,6 +83,12 @@ hi Wildmenu          gui=None guifg='#d39847' guibg='#d34747'
 hi op_lv0            gui=None guifg='#ff93d6' guibg=None
 
 hi link              Macro              Function
+
+" Vim
+hi link              VimLet             Keyword
+hi link              VimHighlight       Function
+hi link              VimFunction        Function
+"hi link              VimIsCommand       Conditional
 
 " COCs
 hi link             CocWarningHighlight Warning
